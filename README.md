@@ -6,7 +6,7 @@ Linux:<br>
 <code>sudo apt install pipenv</code>
 
 Windows:<br>
-<code>pip install pipenv
+<code>pip install pipenv</code>
 
 Then, common commands:<br>
 <code>pipenv install</code>
