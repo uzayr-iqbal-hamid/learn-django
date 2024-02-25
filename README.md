@@ -3,7 +3,7 @@
 ### Let's start by setting up a virtual environment.
 In the terminal / VScode terminal:<br>
 Linux:<br>
-<code>sudo apt install pipenv</code>
+```sudo apt install pipenv```
 
 Windows:<br>
 <code>pip install pipenv</code>
