@@ -32,3 +32,28 @@ To ensure that you have installed Django, run:<br>
 <br>Enter your username and password, confirm password.<br>
 <br>To start the app:<br>
 <code>python manage.py startapp feed</code><br>
+<br>
+Go to [settings.py](mysite/settings.py),
+  - Add 'feed', item in the INSTALLED_APPS = []
+    ![image](https://github.com/uzayr-iqbal-hamid/learn-django/assets/134723279/59c01f01-bbf4-45f4-a5ec-a6459265785c)
+    <br>Run: <code>python manage.py runserver 0.0.0.0:8000</code> again.<br>
+<br>Go to [models.py](feed/models.py),
+  - ```python
+    class Post(models.Model):
+      text = models.CharField(max_length=140, blank=False, null=False)
+    ```
+<br>
+<code>python manage.py makemigrations</code><br>
+<code>python manage.py migrate</code><br>
+<code>python manage.py runserver 0.0.0.0:8000</code><br>
+<br>Go to [admin.py](feed/admin.py), 
+  - ```python
+    from .models import Post
+
+    class PostAdmin(admin.ModelAdmin):
+      pass
+
+    admin.site.register(Post, PostAdmin)
+    ```
+<br>
+Refresh localhost:8000
