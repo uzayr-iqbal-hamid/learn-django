@@ -46,7 +46,9 @@ Go to [settings.py](mysite/settings.py),
 <code>python manage.py makemigrations</code><br>
 <code>python manage.py migrate</code><br>
 <code>python manage.py runserver 0.0.0.0:8000</code><br>
-<br>Go to [admin.py](feed/admin.py), 
+<br>
+
+Go to [admin.py](feed/admin.py), 
   - ```python
     from .models import Post
 
