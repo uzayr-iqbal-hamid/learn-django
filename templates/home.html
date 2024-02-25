@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}django{% endblock %}
+
+{% block body %}
+    {% for post in posts %}
+        <h1>{{post.text}}</h1>
+    {% endfor %}
+{% endblock %}
