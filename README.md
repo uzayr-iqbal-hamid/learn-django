@@ -9,14 +9,14 @@ Windows:<br>
 <code>pip install pipenv
 
 Then, common commands:<br>
-<code>pipenv install
+<code>pipenv install</code>
 This installs all the necessary files (pipfile)
 <br>
 Install Django:<br>
-<code>pipenv install Django
+<code>pipenv install Django</code>
 
 Open Shell:<br>
-<code>pipenv shell
+<code>pipenv shell</code>
 
 To ensure that you have installed Django, run:<br>
-<code>pip show Django
+<code>pip show Django</code>
