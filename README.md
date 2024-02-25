@@ -32,3 +32,6 @@ Create a super user:<br>
 Enter your username and password, confirm password.<br>
 To start the app:<br>
 <code>python manage.py startapp feed</code><br>
+
+
+[manage.py](manage.py)
