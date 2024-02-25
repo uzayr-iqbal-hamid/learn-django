@@ -20,3 +20,15 @@ Open Shell:<br>
 
 To ensure that you have installed Django, run:<br>
 <code>pip show Django</code>
+<br><br>
+### Starting a new project:<br>
+<code>django-admin startproject mysite .</code><br>
+Open it on localhost:8000<br>
+<code>python manage.py runserver 0.0.0.0:8000</code><br>
+Migrate the changes:<br>
+<code>python manage.py migrate</code><br>
+Create a super user:<br>
+<code>python manage.py createsuperuser</code><br>
+Enter your username and password, confirm password.<br>
+To start the app:<br>
+<code>python manage.py startapp feed</code><br>
