@@ -10,9 +10,9 @@ Windows:<br>
 
 Then, common commands:<br>
 <code>pipenv install</code>
-This installs all the necessary files (pipfile)
-<br>
-Install Django:<br>
+<br>This installs all the necessary files (pipfile)
+<br><br>
+### Install Django:<br>
 <code>pipenv install Django</code>
 
 Open Shell:<br>
