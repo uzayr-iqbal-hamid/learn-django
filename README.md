@@ -8,52 +8,89 @@ sudo apt install pipenv
 ```
 
 Windows:<br>
-<code>pip install pipenv</code>
+```shell
+pip install pipenv
+```
 
 Then, common commands:<br>
-<code>pipenv install</code>
+```shell
+pipenv install
+```
 <br>This installs all the necessary files (pipfile)
 <br><br>
 ### Install Django:<br>
-<code>pipenv install Django</code>
+```shell
+pipenv install Django
+```
 
 Open Shell:<br>
-<code>pipenv shell</code>
+```shell
+pipenv shell
+```
 
 To ensure that you have installed Django, run:<br>
-<code>pip show Django</code>
+```shell
+pip show Django
+```
 <br><br>
 ### Starting a new project:<br>
-<code>django-admin startproject mysite .</code><br>
+```shell
+django-admin startproject mysite .
+```
 <br>Open it on localhost:8000<br>
-<code>python manage.py runserver 0.0.0.0:8000</code><br>
+```shell
+python manage.py runserver 0.0.0.0:8000
+```
 <br>Migrate the changes:<br>
-<code>python manage.py migrate</code><br>
+```shell
+python manage.py migrate
+```
 <br>Create a super user:<br>
-<code>python manage.py createsuperuser</code><br>
+```shell
+python manage.py createsuperuser
+```
 <br>Enter your username and password, confirm password.<br>
 <br>To start the app:<br>
-<code>python manage.py startapp feed</code><br>
+```shell
+python manage.py startapp feed
+```
 <br>
+
 Go to [settings.py](mysite/settings.py),
-  - Add 'feed', item in the INSTALLED_APPS = []
-    ![image](https://github.com/uzayr-iqbal-hamid/learn-django/assets/134723279/59c01f01-bbf4-45f4-a5ec-a6459265785c)
-    <br>Run: <code>python manage.py runserver 0.0.0.0:8000</code> again.<br>
-<br>Go to [models.py](feed/models.py),
-  - ```python
-    class Post(models.Model):
-      text = models.CharField(max_length=140, blank=False, null=False)
-    ```
+Add 'feed', item in the INSTALLED_APPS = []
+![image](https://github.com/uzayr-iqbal-hamid/learn-django/assets/134723279/59c01f01-bbf4-45f4-a5ec-a6459265785c)
 <br>
-<code>python manage.py makemigrations</code><br>
-<code>python manage.py migrate</code><br>
-<code>python manage.py runserver 0.0.0.0:8000</code><br>
+Run: 
+
+```shell
+django-admin startproject mysite .
+``` again.<br>
+
+<br>Go to [models.py](feed/models.py),
+
+```python
+class Post(models.Model):
+  text = models.CharField(max_length=140, blank=False, null=False)
+```
+<br>
+
+```shell
+python manage.py makemigrations
+```
+
+```shell
+python manage.py migrate
+```
+
+```shell
+python manage.py runserver 0.0.0.0:8000
+```
 <br>
 
 Go to [admin.py](feed/admin.py), 
   - ```python
     from .models import Post
-
+    
     class PostAdmin(admin.ModelAdmin):
       pass
 
