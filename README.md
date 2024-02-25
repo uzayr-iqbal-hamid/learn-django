@@ -67,7 +67,7 @@ python manage.py startapp feed
 <br>
 
 Go to [settings.py](mysite/settings.py),
-Add 'feed', item in the INSTALLED_APPS = []
+Add 'feed', item in the INSTALLED_APPS = []<br>
 ![image](https://github.com/uzayr-iqbal-hamid/learn-django/assets/134723279/59c01f01-bbf4-45f4-a5ec-a6459265785c)
 <br>
 In terminal
