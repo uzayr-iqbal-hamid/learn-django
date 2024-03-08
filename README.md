@@ -1,4 +1,4 @@
-# learn-django
+# [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Learn-Django;For+Beginners+:))](https://git.io/typing-svg)
 
 ### Let's start by setting up a virtual environment.
 In the terminal / VScode terminal:<br>
