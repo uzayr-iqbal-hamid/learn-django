@@ -110,3 +110,41 @@ Go to [admin.py](feed/admin.py), and type:
     ```
 <br>
 Refresh localhost:8000
+
+
+# Adding a home page
+
+- Go to views.py
+```bash
+    from django.views.generic import TemplateView
+
+    from .models import Post
+````
+```bash
+    class HomePage(TemplateView):
+        http_method_names = ["get"]
+        template_name = "feed/homepage.html"
+
+        def dispatch(self, request, *args, **kwargs):
+            self.request = request
+            return super().dispatch(request, *args, **kwargs)
+```
+- Make a new folder and file under feed, templates/feed/homepage.html
+- In mysite/urls.py, 
+```bash
+    from django.contrib import admin
+    from django.urls import path
+    from django.conf.urls import include
+    from feed import urls as feed_urls
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path("", include(feed_urls, namespace="feed")),
+    ]
+```
+- In settings.py, under INSTALLED_APPS, under DIRS[] add,
+```bash
+    'DIRS': [
+            os.path.join(PROJECT_DIR, "feed/templates")
+    ],
+```
